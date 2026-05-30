@@ -519,7 +519,7 @@ function LoginForm({ onSuccess }) {
             {showPw ? <IcoEyeOff /> : <IcoEye />}
           </span>
         </div>
-        <a href="#" className="form-forgot">Forgot password?</a>
+        <a href="/" className="form-forgot">Forgot password?</a>
       </div>
       <button className="btn-auth" onClick={handleSubmit} disabled={loading}>
         {loading ? "Signing in…" : "Sign In to Dashboard"}
@@ -588,7 +588,7 @@ function RegisterForm({ onSuccess }) {
       </div>
       <label className="form-check">
         <input type="checkbox" checked={agree} onChange={e=>setAgree(e.target.checked)} />
-        I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+        I agree to the <a href="/">Terms of Service</a> and <a href="/">Privacy Policy</a>
       </label>
       <button className="btn-auth" onClick={handleSubmit} disabled={loading || !agree} style={{opacity:(!agree||loading)?.6:1}}>
         {loading ? "Creating Account…" : "Create Account"}
@@ -911,8 +911,8 @@ function Team() {
               <h3>{m.name}</h3>
               <p className="team-en">{m.nameAr}</p>
               <div className="soc-row">
-                <a href="#" className="soc-btn">LinkedIn</a>
-                <a href="#" className="soc-btn">GitHub</a>
+                <a href="/" className="soc-btn">LinkedIn</a>
+                <a href="/" className="soc-btn">GitHub</a>
               </div>
             </div>
           ))}
@@ -975,7 +975,7 @@ function Footer() {
       </p>
       <div className="fsoc-row">
         {["in", "gh", "tw", "@"].map((s, i) => (
-          <a key={i} href="#" className="fsoc">{s}</a>
+          <a key={i} href="/" className="fsoc">{s}</a>
         ))}
       </div>
     </footer>
