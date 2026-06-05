@@ -403,7 +403,6 @@ const TECH_DATA = [
   { abbr:"PBI", name:"Power BI",        desc:"Visualization" },
   { abbr:"DAX", name:"DAX",            desc:"Analytics Language" },
   { abbr:"RX",  name:"React.js",        desc:"Frontend" },
-  { abbr:"NJS", name:"Node.js",         desc:"Runtime" },
   { abbr:"BI",  name:"Business Intel.", desc:"Strategy Layer" },
 ];
 const TEAM_DATA = [
@@ -421,8 +420,8 @@ const IMPACT_DATA = [
   { val:"3×",   title:"Decision Speed",         desc:"Executives act on insights in real time rather than end-of-month reports." },
   { val:"360°", title:"Operational Visibility", desc:"Every facet of logistics monitored from a single unified platform." },
 ];
-const PBI_URL = "https://app.powerbi.com/reportEmbed?reportId=0b63fceb-08c5-4699-a8ce-53fdddd0be28&groupId=me&autoAuth=true&ctid=&experience=power-bi";
-
+const PBI_URL =
+  "https://app.powerbi.com/reportEmbed?reportId=45550a04-5440-4a33-958b-a5af7b12c80a&autoAuth=true&ctid=061bb382-6154-4133-a318-23c308dfe636";
 /* ═══════════════════════════════════════════════════════
    HOOKS
 ═══════════════════════════════════════════════════════ */
@@ -849,7 +848,7 @@ function Dashboards() {
               onClick={()=>setActive(i)} style={{transitionDelay:`${i*70}ms`}}>
               <div className="dash-tag">{d.tag}</div>
               <h3>{d.title}</h3><p>{d.desc}</p>
-              <a href="https://app.powerbi.com/groups/me/reports/0b63fceb-08c5-4699-a8ce-53fdddd0be28/21d6a55c60bafb3371d6?experience=power-bi"
+              <a href="https://app.powerbi.com/reportEmbed?reportId=45550a04-5440-4a33-958b-a5af7b12c80a&autoAuth=true&ctid=061bb382-6154-4133-a318-23c308dfe636"
                 target="_blank" rel="noopener noreferrer" className="btn-xs" onClick={e=>e.stopPropagation()}>
                 Open Full Report <IcoLink />
               </a>
