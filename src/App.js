@@ -952,7 +952,7 @@ function Contact() {
         <h2 className="section-title reveal">Access <span>Project Assets</span></h2>
         <p className="section-sub reveal">Live dashboard, technical documentation, and source code.</p>
         <div className="res-row reveal">
-          <a href="https://app.powerbi.com/groups/me/reports/0b63fceb-08c5-4699-a8ce-53fdddd0be28/21d6a55c60bafb3371d6?experience=power-bi"
+          <a href="https://app.powerbi.com/reportEmbed?reportId=45550a04-5440-4a33-958b-a5af7b12c80a&autoAuth=true&ctid=061bb382-6154-4133-a318-23c308dfe636"
             target="_blank" rel="noopener noreferrer" className="res-a solid">
             Power BI Dashboard <IcoLink />
           </a>
